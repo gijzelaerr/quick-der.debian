@@ -1,0 +1,28 @@
+Source: quick-der
+Priority: optional
+Maintainer: KERN packaging <packaging@kernsuite.info>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Section: libs
+Homepage: https://github.com/vanrein/quick-der
+Vcs-Git: https://github.com/gijzelaerr/quick-der.debian
+Vcs-Browser: https://github.com/gijzelaerr/quick-der.debian
+
+Package: quick-der-dev
+Section: libdevel
+Architecture: any
+Depends: quick-der0 (= ${binary:Version}), ${misc:Depends}
+Description: Quick `n' Easy DER library
+ Library for handling DER, which is a widely used binary representation of
+ ASN.1 syntax in binary formats. The library describes ASN.1 syntax in a
+ parser table that can be fed into library routines, resulting in
+ pointer/length descriptors for the individual data fragments.
+
+Package: quick-der0
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Quick `n' Easy DER library
+ Library for handling DER, which is a widely used binary representation of
+ ASN.1 syntax in binary formats. The library describes ASN.1 syntax in a
+ parser table that can be fed into library routines, resulting in
+ pointer/length descriptors for the individual data fragments.

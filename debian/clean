@@ -1,0 +1,5 @@
+tool/asn1ate/__init__.pyc
+tool/asn1ate/sema.pyc
+tool/asn1ate/parser.pyc
+python/quick_der/packstx.pyc
+python/quick_der/__init__.pyc
